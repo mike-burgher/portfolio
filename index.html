@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Mike Burgher — Full-Stack Web Developer portfolio." />
+  <title>Mike Burgher | Full-Stack Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">MB</span>
+        <span class="brand-text">Mike Burgher</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Portfolio</p>
+          <h1>Full-Stack Web Developer</h1>
+          <p class="lede">
+            I build dependable web apps with clean UX, clear state, and practical automation.
+            Here are a few projects I’ve shipped recently.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn" href="assets/Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+          </div>
+
+          <div class="link-row" aria-label="Social links">
+            <a class="chip" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a>
+            <a class="chip" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="chip" href="mailto:YOUR_EMAIL">Email</a>
+          </div>
+        </div>
+
+        <div class="hero-card" role="region" aria-label="Profile">
+          <img class="avatar" src="assets/headshot.jpg" alt="Headshot of Mike Burgher" />
+          <div class="hero-card-body">
+            <p class="name">Mike Burgher</p>
+            <p class="meta">Denver, CO • Remote-friendly</p>
+            <ul class="bullets">
+              <li>Full-stack web apps (HTML/CSS/JS + backend as needed)</li>
+              <li>Strong math background; clear communication</li>
+              <li>Bias-aware UX and shared-state apps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="section-sub">
+          A few things I’ve built. Each includes a short problem/solution summary and links.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-top">
+            <h3>Film Club</h3>
+            <p class="card-desc">
+              A film rating app that minimizes peer influence by hiding ratings until everyone submits.
+            </p>
+          </div>
+          <ul class="highlights">
+            <li>Designed rating flow to reduce bias and improve fairness</li>
+            <li>Simple UI for rounds, eligibility, and group outcomes</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Firebase (optional)</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn small" href="https://YOUR_LIVE_DEMO" target="_blank" rel="noopener">Live</a>
+            <a class="btn small" href="https://github.com/YOUR_GITHUB/filmclub" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>To-Do App</h3>
+            <p class="card-desc">
+              A daily workflow tool for planning, prioritizing, and moving tasks across time.
+            </p>
+          </div>
+          <ul class="highlights">
+            <li>Fast keyboard-friendly interactions and clear task state</li>
+            <li>Built for consistency and low-friction daily use</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">LocalStorage</span>
+            <span class="tag">Responsive UI</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn small" href="https://YOUR_LIVE_DEMO" target="_blank" rel="noopener">Live</a>
+            <a class="btn small" href="https://github.com/YOUR_GITHUB/todo" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Chess App</h3>
+            <p class="card-desc">
+              A shared-state chess experience that mirrors over-the-board play with synchronized moves.
+            </p>
+          </div>
+          <ul class="highlights">
+            <li>Managed shared game state and turn validation</li>
+            <li>Focused on predictable UX and real-time consistency</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">State</span>
+            <span class="tag">Realtime</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn small" href="https://YOUR_LIVE_DEMO" target="_blank" rel="noopener">Live</a>
+            <a class="btn small" href="https://github.com/YOUR_GITHUB/chess" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-head">
+        <h2>About</h2>
+      </div>
+
+      <div class="about">
+        <p>
+          I’m a full-stack web developer with a strong math background and a focus on building dependable systems.
+          I’m drawn to work where thoughtful automation, clear state, and clean UX make complex processes easier to navigate.
+        </p>
+        <p>
+          I’m currently seeking software engineering roles where I can contribute across the stack, collaborate closely, and ship practical improvements quickly.
+        </p>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="section-sub">Best way to reach me is email. I’m happy to share more details or walk through any project.</p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:YOUR_EMAIL">Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">Message on LinkedIn</a>
+        </div>
+
+        <p class="fineprint">
+          © <span id="year"></span> Mike Burgher. Built with HTML, CSS, and JavaScript.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
