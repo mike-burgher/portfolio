@@ -68,9 +68,17 @@ a:hover{ text-decoration: underline; }
   position: sticky;
   top: 0;
   z-index: 20;
+
+  /* keep blur but make it more cross-browser */
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+
   background: rgba(15,17,21,0.70);
   border-bottom: 1px solid var(--border);
+
+  /* force its own composited layer to avoid “text disappears until repaint” */
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .nav{
