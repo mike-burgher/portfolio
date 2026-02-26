@@ -187,11 +187,14 @@ h1{
   box-shadow: var(--shadow);
 }
 .avatar{
-  width: 100%;
-  aspect-ratio: 16/10;
+  width: 220px;
+  height: 220px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  border-radius: 999px;
+  border: 1px solid var(--border);
   display: block;
-  filter: saturate(1.05) contrast(1.02);
+  margin: 18px auto 0;
 }
 .hero-card-body{
   padding: 16px 16px 18px;
@@ -214,15 +217,7 @@ h1{
 
 /* Turn a square headshot into a circle (if you prefer) */
 @media (min-width: 880px){
-  .avatar{
-    aspect-ratio: 1 / 1;
-    max-width: 220px;
-    width: 220px;
-    height: 220px;
-    border-radius: 999px;
-    margin: 18px auto 0;
-    border: 1px solid var(--border);
-  }
+
   .hero-card{
     display: grid;
     place-items: center;
